@@ -2,7 +2,7 @@
     "name": "fixstacks/module-zero-marketing-pixels",
     "description": "Zero for Magento Open Source: Meta, TikTok, Pinterest and Microsoft Clarity from an ID in the admin each, loaded only after consent, fed by the storefront's GA4 e-commerce events.",
     "type": "magento2-module",
-    "version": "1.3.0",
+    "version": "1.1.0",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
@@ -30,9 +30,9 @@
         "magento/module-config": "*",
         "magento/module-csp": "*",
         "magento/module-store": "*",
-        "fixstacks/module-zero-core": "^1.3",
-        "fixstacks/module-zero-consent": "^1.3",
-        "fixstacks/module-zero-google-analytics": "^1.3"
+        "fixstacks/module-zero-core": "^1.1",
+        "fixstacks/module-zero-consent": "^1.1",
+        "fixstacks/module-zero-google-analytics": "^1.1"
     },
     "autoload": {
         "files": [
