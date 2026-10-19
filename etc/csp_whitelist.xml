@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2026 Roman Pasichnyk
+ * SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+ *
+ * Hosts the pixels load from and send to (Meta, TikTok, Pinterest, Microsoft
+ * Clarity), per each network's CSP guidance.
+ */
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="zero-pixels-meta" type="host">https://connect.facebook.net</value>
+                <value id="zero-pixels-tiktok" type="host">https://analytics.tiktok.com</value>
+                <value id="zero-pixels-pinterest" type="host">https://s.pinimg.com</value>
+                <value id="zero-pixels-clarity" type="host">https://*.clarity.ms</value>
+            </values>
+        </policy>
+        <policy id="img-src">
+            <values>
+                <value id="zero-pixels-meta" type="host">https://www.facebook.com</value>
+                <value id="zero-pixels-tiktok" type="host">https://analytics.tiktok.com</value>
+                <value id="zero-pixels-pinterest" type="host">https://ct.pinterest.com</value>
+                <value id="zero-pixels-clarity" type="host">https://*.clarity.ms</value>
+                <value id="zero-pixels-bing" type="host">https://c.bing.com</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="zero-pixels-meta" type="host">https://www.facebook.com</value>
+                <value id="zero-pixels-meta-connect" type="host">https://connect.facebook.net</value>
+                <value id="zero-pixels-tiktok" type="host">https://analytics.tiktok.com</value>
+                <value id="zero-pixels-tiktok-business" type="host">https://*.tiktokw.us</value>
+                <value id="zero-pixels-pinterest" type="host">https://ct.pinterest.com</value>
+                <value id="zero-pixels-clarity" type="host">https://*.clarity.ms</value>
+            </values>
+        </policy>
+        <policy id="frame-src">
+            <values>
+                <value id="zero-pixels-meta" type="host">https://www.facebook.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

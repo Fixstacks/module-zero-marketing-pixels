@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copyright © 2026 Roman Pasichnyk
+ * SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+ *
+ * The active pixels' IDs as JSON (the storefront's CSP allows no inline
+ * scripts) and pixels.js, which loads each pixel once the visitor consents.
+ *
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Zero\MarketingPixels\ViewModel\Pixels $pixels
+ */
+$settings = $block->getData('pixels')->settings();
+if (!$settings) {
+    return;
+}
+?>
+<script type="application/json" id="zero-pixels-settings"><?= /* @noEscape */ json_encode($settings, JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
+<script src="<?= $escaper->escapeUrl($block->getViewFileUrl('Zero_MarketingPixels::js/pixels.js')) ?>" defer></script>

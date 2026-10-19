@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+    Copyright © 2026 Roman Pasichnyk
+    SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <zero_pixels>
+            <meta>
+                <enabled>0</enabled>
+                <pixel_id/>
+            </meta>
+            <tiktok>
+                <enabled>0</enabled>
+                <pixel_id/>
+            </tiktok>
+            <pinterest>
+                <enabled>0</enabled>
+                <tag_id/>
+            </pinterest>
+            <clarity>
+                <enabled>0</enabled>
+                <project_id/>
+            </clarity>
+        </zero_pixels>
+    </default>
+</config>
