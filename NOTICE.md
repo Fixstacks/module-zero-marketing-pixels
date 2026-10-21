@@ -1,4 +1,4 @@
-# fixstacks/module-zero-marketing-pixels — licensing
+# zerofront/module-zero-marketing-pixels — licensing
 
 Copyright © 2026 Roman Pasichnyk.
 
